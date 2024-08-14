@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: dc-metro-map
     pipelines.appstudio.openshift.io/type: build
   name: dc-metro-map-on-push
-  namespace: ex-registry-ihvn-tenant
+  namespace: happy-path-ogtg-tenant
 spec:
   params:
   - name: git-url
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/ex-registry-ihvn-tenant/appstudio/dc-metro-map:{{revision}}
+    value: quay.io/psturc_org/happy-path-ogtg-tenant/appstudio/dc-metro-map:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: path-context
